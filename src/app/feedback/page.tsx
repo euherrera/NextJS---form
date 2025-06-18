@@ -20,7 +20,7 @@ export default function Feedback() {
         const { name, email, message } = data
 
         // Send data to API route
-        const res = await fetch('https://euherrera.github.io/NextJS---form/api/feedback', {
+        const res = await fetch('/api/feedback', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
